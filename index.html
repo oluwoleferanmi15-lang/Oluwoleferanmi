@@ -1,5 +1,5 @@
 <!DOCTYPE html>as
-<html lang="en">
+<html lang="en" style="overflow-x:hidden">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -90,14 +90,29 @@ body::after {
 /* ============================================================
    SIDEBAR NAV
 ============================================================ */
-#sidebar {
-  position: fixed;
-  left: 0; top: 0; bottom: 0;
-  width: var(--sidebar-w);
+@media(max-width:768px){
+  #sidebar {
+    display: none !important;
+  }
+  #main {
+    margin-left: 0 !important;
+    width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  .hero-name {
+    font-size: clamp(2rem, 11vw, 3.5rem) !important;
+  }
+  .hero-content {
+    max-width: 100% !important;
+  }
+  #contact .contact-headline {
+    font-size: clamp(2rem, 11vw, 3.5rem) !important;
+  }
+}
   background: rgba(10,10,10,0.92);
   backdrop-filter: blur(20px);
   border-right: 1px solid var(--border);
-  z-index: 500;
+  z-index: ;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
