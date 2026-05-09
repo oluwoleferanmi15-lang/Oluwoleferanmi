@@ -1,12 +1,11 @@
-<!DOCTYPE html>as
-<html lang="en" style="overflow-x:hidden">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oluwole Feranmi Emmanuel — Backend Developer</title>
 <meta name="description" content="Backend Developer in training at TS Academy. Building real systems with Node.js, Express, MongoDB & PostgreSQL.">
-¹
-   
+
 <!-- Open Graph -->
 <meta property="og:title" content="Oluwole Feranmi Emmanuel — Backend Developer">
 <meta property="og:description" content="Backend Developer in training. Building real systems that work.">
@@ -40,7 +39,7 @@
 }
 
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior: smooth; overflow-x: hidden; }
+html { scroll-behavior: smooth; }
 
 body {
   background: var(--bg);
@@ -90,29 +89,14 @@ body::after {
 /* ============================================================
    SIDEBAR NAV
 ============================================================ */
-@media(max-width:768px){
-  #sidebar {
-    display: none !important;
-  }
-  #main {
-    margin-left: 0 !important;
-    width: 100vw !important;
-    overflow-x: hidden !important;
-  }
-  .hero-name {
-    font-size: clamp(2rem, 11vw, 3.5rem) !important;
-  }
-  .hero-content {
-    max-width: 100% !important;
-  }
-  #contact .contact-headline {
-    font-size: clamp(2rem, 11vw, 3.5rem) !important;
-  }
-}
+#sidebar {
+  position: fixed;
+  left: 0; top: 0; bottom: 0;
+  width: var(--sidebar-w);
   background: rgba(10,10,10,0.92);
   backdrop-filter: blur(20px);
   border-right: 1px solid var(--border);
-  z-index: ;
+  z-index: 500;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -939,7 +923,9 @@ footer span b { color:var(--accent); }
 /* ============================================================
    MOBILE
 ============================================================ */
-html { scroll-behavior: smooth; overflow-x: hidden; }
+@media(max-width:768px){
+  #sidebar { display:none; }
+  #main { margin-left:0; }
   section { padding:5rem 1.5rem; }
   #hero { padding:0 1.5rem 4rem; }
   #about .about-grid { grid-template-columns:1fr; gap:2.5rem; }
@@ -1037,7 +1023,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 
       <p class="hero-bio">
         Building real, working systems while studying Medical Laboratory Science.
-        Trained in backend development at TS Academy, bridging science and software, one API at a time.
+        Trained in backend development at TS Academy — bridging science and software, one API at a time.
       </p>
 
       <div class="hero-actions">
@@ -1062,8 +1048,9 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
       <span class="marquee-item"><b>✦</b>PostgreSQL</span>
       <span class="marquee-item"><b>✦</b>REST APIs</span>
       <span class="marquee-item"><b>✦</b>Git & GitHub</span>
+      <span class="marquee-item"><b>✦</b>Linux</span>
       <span class="marquee-item"><b>✦</b>Postman</span>
-      
+      <!-- Duplicate for seamless loop -->
       <span class="marquee-item"><b>✦</b>Node.js</span>
       <span class="marquee-item"><b>✦</b>Express.js</span>
       <span class="marquee-item"><b>✦</b>JavaScript</span>
@@ -1071,11 +1058,12 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
       <span class="marquee-item"><b>✦</b>PostgreSQL</span>
       <span class="marquee-item"><b>✦</b>REST APIs</span>
       <span class="marquee-item"><b>✦</b>Git & GitHub</span>
+      <span class="marquee-item"><b>✦</b>Linux</span>
       <span class="marquee-item"><b>✦</b>Postman</span>
     </div>
   </div>
 
-   
+  <!-- ABOUT -->
   <section id="about">
     <div class="sec-label">About</div>
     <div class="about-grid">
@@ -1083,8 +1071,8 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
       <div class="reveal">
         <h2 class="sec-title">Who I am</h2>
         <p class="about-body">
-          I'm a <em>200-level Medical Laboratory Science student</em> at Olabisi Onabanjo university, simultaneously in backend development training at <em>TS Academy</em>. I build server-side systems that actually work, not just tutorials, real projects with real logic.<br><br>
-          Studying <em>Medical Laboratory Science</em> taught me one thing above all: <em>precision</em> matters. That same mindset is what I bring to every API, database, and system I build.
+          I'm a <em>200-level Medical Laboratory Science student</em> at university, simultaneously in backend development training at <em>TS Academy</em>. I build server-side systems that actually work — not just tutorials, real projects with real logic.<br><br>
+          My background in science gives me a different lens: I think in <em>systems, processes, and precision</em> — which translates surprisingly well to backend architecture.
         </p>
         <div class="stats-row">
           <div class="stat-box">
@@ -1092,12 +1080,12 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
             <div class="stat-l">Projects Built</div>
           </div>
           <div class="stat-box">
-            <div class="stat-n">1</div>
+            <div class="stat-n">1+</div>
             <div class="stat-l">Year Coding</div>
           </div>
           <div class="stat-box">
             <div class="stat-n">200L</div>
-            <div class="stat-l">Olabisi Onabanjo University</div>
+            <div class="stat-l">University</div>
           </div>
         </div>
       </div>
@@ -1114,7 +1102,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
             <div class="t-cmd">$ whoami</div>
             <div class="t-line">> <b>Oluwole Feranmi Emmanuel</b></div>
             <div class="t-line">> 200L Medical Lab Science · University</div>
-            <div class="t-line">> Currently learning Backend Dev <b>@ TS Academy</b></div>
+            <div class="t-line">> Trained in Backend Dev <b>@ TS Academy</b></div>
             <div class="t-line">> Currently building: <b>Femma Bank</b></div>
             <div class="t-line">> Mock NIBSS API System 🏦</div>
             <div class="t-line">> Open to internships &amp; junior roles</div>
@@ -1126,7 +1114,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
     </div>
   </section>
 
-
+  <!-- CURRENTLY LEARNING -->
   <div id="learning">
     <div class="learning-inner">
       <div class="learning-label">
@@ -1176,6 +1164,10 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
         <i class="devicon-github-original" style="color:#aaa"></i>
         <span>GitHub</span>
       </div>
+      <div class="skill-item reveal d2">
+        <i class="devicon-linux-plain" style="color:#aaa"></i>
+        <span>Linux</span>
+      </div>
       <div class="skill-item reveal d3">
         <i class="devicon-vscode-plain colored"></i>
         <span>VS Code</span>
@@ -1196,7 +1188,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 
       <div class="t-item reveal">
         <div class="t-dot"></div>
-        <div class="t-date"> Dec. 2025 — Present</div>
+        <div class="t-date">2024 — Present</div>
         <div class="t-role">Backend Development Trainee</div>
         <div class="t-org">TS Academy · In Progress</div>
         <p class="t-desc">Formally trained in backend development — covering Node.js, Express, databases, REST API design, authentication, and real project delivery. Building production-grade systems as part of training assignments.</p>
@@ -1204,7 +1196,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 
       <div class="t-item reveal d1">
         <div class="t-dot"></div>
-        <div class="t-date">2026</div>
+        <div class="t-date">2024</div>
         <div class="t-role">Library Management System</div>
         <div class="t-org">Personal Project · Completed</div>
         <p class="t-desc">Built a fully functional library system managing book borrowing, return tracking, author records, and library manager roles. Designed and implemented the complete backend from schema to API.</p>
@@ -1212,18 +1204,18 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 
       <div class="t-item reveal d2">
         <div class="t-dot"></div>
-        <div class="t-date">2026</div>
+        <div class="t-date">2024</div>
         <div class="t-role">OOUMatNumCheckr — Telegram Bot</div>
         <div class="t-org">Personal Project · Completed</div>
-        <p class="t-desc">Developed a Telegram bot that retrieves student details by matric number. The details onclude their full name, department, current level and so on through a simple chat interface.</p>
+        <p class="t-desc">Developed a Telegram bot that retrieves student details by matric number. Integrated with a database backend to serve real-time student information through a simple chat interface.</p>
       </div>
 
       <div class="t-item reveal d3">
         <div class="t-dot"></div>
-        <div class="t-date">2024 — Present</div>
+        <div class="t-date">2022 — Present</div>
         <div class="t-role">BSc Medical Laboratory Science</div>
-        <div class="t-org">OOUTH, Sagamu. · 200 Level</div>
-        <p class="t-desc">200-level student studying Medical Laboratory Science. Pursuing backend development in parallel through TS Academy, combining analytical scientific thinking with software engineering principles.</p>
+        <div class="t-org">University · 200 Level</div>
+        <p class="t-desc">200-level student studying Medical Laboratory Science. Pursuing backend development in parallel through TS Academy — combining analytical scientific thinking with software engineering principles.</p>
       </div>
 
     </div>
@@ -1248,10 +1240,10 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
         Currently Building
       </div>
       <div class="project-name" style="font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-.03em;margin-bottom:.8rem">
-        Fem Bank
+        Femma Bank
       </div>
       <p class="project-desc" style="max-width:600px">
-        A fully working banking system with a mock NIBSS API integration. Handles account creation, transfers, transaction history and communicates with a simulated Nigerian Inter-Bank Settlement System database. Built as an academy assignment—taken beyond the brief.
+        A fully working banking system with a mock NIBSS API integration. Handles account creation, transfers, transaction history and communicates with a simulated Nigerian Inter-Bank Settlement System database. Built as an academy assignment — taken beyond the brief.
       </p>
       <div class="project-stack">
         <span class="p-tag">Node.js</span>
@@ -1332,10 +1324,10 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
           ⌥ GitHub
         </a>
         <a href="https://linkedin.com/in/oluwaferanm1" target="_blank" class="soc-btn">
-            LinkedIn
+          in LinkedIn
         </a>
-        <a href="https://x.com/oluwa_feranm1" target="_blank" class="soc-btn">
-            X
+        <a href="https://twitter.com/oluwa_feranm1" target="_blank" class="soc-btn">
+          𝕏 Twitter
         </a>
         <a href="https://wa.me/2349153834020" target="_blank" class="soc-btn wa">
           ✆ WhatsApp
@@ -1344,7 +1336,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
     </div>
   </section>
 
-
+  <!-- FOOTER -->
   <footer>
     <span>© 2025 <b>Oluwole Feranmi Emmanuel</b></span>
     <span>Backend Developer in Training · TS Academy</span>
