@@ -6,7 +6,6 @@
 <title>Oluwole Feranmi Emmanuel — Backend Developer</title>
 <meta name="description" content="Backend Developer in training at TS Academy. Building real systems with Node.js, Express, MongoDB & PostgreSQL.">
 
-<!-- Open Graph -->
 <meta property="og:title" content="Oluwole Feranmi Emmanuel — Backend Developer">
 <meta property="og:description" content="Backend Developer in training. Building real systems that work.">
 <meta property="og:image" content="oluwaferanmi.jpg">
@@ -14,13 +13,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
-<!-- Devicons for skill icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
 <style>
-/* ============================================================
-   CSS VARIABLES & RESET
-============================================================ */
+
 :root {
   --bg:       #080808;
   --bg2:      #0e0e0e;
@@ -49,9 +45,6 @@ body {
   cursor: none;
 }
 
-/* ============================================================
-   CUSTOM CURSOR
-============================================================ */
 #cursor {
   width: 10px; height: 10px;
   background: var(--accent);
@@ -74,9 +67,6 @@ body {
 }
 body a, body button { cursor: none; }
 
-/* ============================================================
-   NOISE OVERLAY
-============================================================ */
 body::after {
   content:'';
   position: fixed;
@@ -86,9 +76,6 @@ body::after {
   z-index: 9990;
 }
 
-/* ============================================================
-   SIDEBAR NAV
-============================================================ */
 #sidebar {
   position: fixed;
   left: 0; top: 0; bottom: 0;
@@ -209,17 +196,11 @@ body::after {
 }
 #sidebar:hover .sidebar-social .s-label { opacity:1; }
 
-/* ============================================================
-   MAIN CONTENT
-============================================================ */
 #main {
   margin-left: var(--sidebar-w);
   transition: margin-left var(--transition);
 }
 
-/* ============================================================
-   HERO
-============================================================ */
 #hero {
   position: relative;
   min-height: 100vh;
@@ -241,7 +222,6 @@ body::after {
 }
 #hero:hover .hero-bg { transform: scale(1); }
 
-/* layered dark overlay */
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -354,7 +334,6 @@ body::after {
 }
 .btn-ghost:hover { border-color:var(--accent); color:var(--accent); }
 
-/* Scroll cue */
 .scroll-cue {
   position:absolute;
   bottom:2rem; right:4rem;
@@ -376,9 +355,6 @@ body::after {
 @keyframes fadeUp { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
 @keyframes fadeIn { from{opacity:0} to{opacity:1} }
 
-/* ============================================================
-   MARQUEE STRIP
-============================================================ */
 .marquee-strip {
   border-top:1px solid var(--border);
   border-bottom:1px solid var(--border);
@@ -402,9 +378,6 @@ body::after {
 .marquee-item b { color:var(--accent); margin-right:1rem; }
 @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
 
-/* ============================================================
-   SECTION COMMONS
-============================================================ */
 section {
   padding: 7rem 4rem;
   border-top: 1px solid var(--border);
@@ -433,7 +406,6 @@ section {
   margin-bottom:3.5rem;
 }
 
-/* Scroll reveal */
 .reveal {
   opacity:0;
   transform:translateY(28px);
@@ -445,9 +417,6 @@ section {
 .reveal.d3{transition-delay:.3s}
 .reveal.d4{transition-delay:.4s}
 
-/* ============================================================
-   ABOUT
-============================================================ */
 #about .about-grid {
   display:grid;
   grid-template-columns:1.1fr 1fr;
@@ -455,7 +424,6 @@ section {
   align-items:start;
 }
 
-/* Terminal block */
 .terminal {
   background:#0c0c0c;
   border:1px solid var(--border);
@@ -535,9 +503,6 @@ section {
   color:var(--muted);
 }
 
-/* ============================================================
-   CURRENTLY LEARNING
-============================================================ */
 #learning {
   background: var(--surface);
   padding:3rem 4rem;
@@ -580,9 +545,6 @@ section {
   50%{border-color:rgba(200,240,62,.6);color:var(--accent)}
 }
 
-/* ============================================================
-   SKILLS
-============================================================ */
 #skills .skills-grid {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(80px,1fr));
@@ -630,9 +592,6 @@ section {
 }
 .skill-item:hover span { color:var(--accent); }
 
-/* ============================================================
-   EXPERIENCE / TIMELINE
-============================================================ */
 #experience .timeline {
   position:relative;
   padding-left:2.5rem;
@@ -690,9 +649,6 @@ section {
   max-width:580px;
 }
 
-/* ============================================================
-   PROJECTS
-============================================================ */
 #projects .projects-header {
   display:flex;
   justify-content:space-between;
@@ -702,7 +658,6 @@ section {
   gap:1rem;
 }
 
-/* Currently building card — featured */
 .project-featured {
   border:1px solid rgba(200,240,62,.3);
   background:var(--surface);
@@ -740,8 +695,6 @@ section {
   border-radius:50%;
   animation:blink 1.5s ease infinite;
 }
-
-/* Regular project grid */
 .projects-grid {
   display:grid;
   grid-template-columns:repeat(2,1fr);
@@ -822,10 +775,6 @@ section {
 .p-link:hover { color:var(--accent); }
 .p-link .arrow { transition:transform .2s; }
 .p-link:hover .arrow { transform:translateX(4px); }
-
-/* ============================================================
-   CONTACT / LET'S COLLABORATE
-============================================================ */
 #contact {
   background:var(--surface);
   text-align:center;
@@ -899,13 +848,9 @@ section {
 }
 .soc-btn:hover { color:var(--accent); border-color:rgba(200,240,62,.3); }
 
-/* WhatsApp special */
 .soc-btn.wa { color:#25d366; border-color:rgba(37,211,102,.2); }
 .soc-btn.wa:hover { color:#25d366; border-color:rgba(37,211,102,.5); }
 
-/* ============================================================
-   FOOTER
-============================================================ */
 footer {
   padding:1.8rem 4rem;
   border-top:1px solid var(--border);
@@ -920,9 +865,6 @@ footer {
 }
 footer span b { color:var(--accent); }
 
-/* ============================================================
-   MOBILE
-============================================================ */
 @media(max-width:768px){
   #sidebar { display:none; }
   #main { margin-left:0; }
@@ -939,13 +881,9 @@ footer span b { color:var(--accent); }
 </head>
 <body>
 
-<!-- CURSOR -->
 <div id="cursor"></div>
 <div id="cursor-ring"></div>
 
-<!-- ============================================================
-     SIDEBAR
-============================================================ -->
 <nav id="sidebar">
   <div class="sidebar-logo">
     <span class="logo-short">FE</span>
@@ -997,12 +935,8 @@ footer span b { color:var(--accent); }
   </div>
 </nav>
 
-<!-- ============================================================
-     MAIN
-============================================================ -->
 <div id="main">
 
-  <!-- HERO -->
   <section id="hero">
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
@@ -1038,7 +972,7 @@ footer span b { color:var(--accent); }
     </div>
   </section>
 
-  <!-- MARQUEE -->
+
   <div class="marquee-strip">
     <div class="marquee-track">
       <span class="marquee-item"><b>✦</b>Node.js</span>
@@ -1061,7 +995,6 @@ footer span b { color:var(--accent); }
     </div>
   </div>
 
-  <!-- ABOUT -->
   <section id="about">
     <div class="sec-label">About</div>
     <div class="about-grid">
@@ -1112,7 +1045,6 @@ footer span b { color:var(--accent); }
     </div>
   </section>
 
-  <!-- CURRENTLY LEARNING -->
   <div id="learning">
     <div class="learning-inner">
       <div class="learning-label">
@@ -1128,7 +1060,6 @@ footer span b { color:var(--accent); }
     </div>
   </div>
 
-  <!-- SKILLS -->
   <section id="skills">
     <div class="sec-label">Expertise</div>
     <h2 class="sec-title reveal">My stack</h2>
@@ -1174,7 +1105,6 @@ footer span b { color:var(--accent); }
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
   <section id="experience">
     <div class="sec-label">Journey</div>
     <h2 class="sec-title reveal">My timeline</h2>
@@ -1215,7 +1145,6 @@ footer span b { color:var(--accent); }
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section id="projects">
     <div class="projects-header">
       <div>
@@ -1227,7 +1156,6 @@ footer span b { color:var(--accent); }
       </a>
     </div>
 
-    <!-- Currently Building — Featured -->
     <div class="project-featured reveal">
       <div class="in-progress-badge">
         <span class="live-dot"></span>
@@ -1253,7 +1181,7 @@ footer span b { color:var(--accent); }
       </div>
     </div>
 
-    <!-- Project Grid -->
+
     <div class="projects-grid">
 
       <div class="project-card reveal">
@@ -1293,7 +1221,6 @@ footer span b { color:var(--accent); }
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact">
     <div class="contact-inner">
       <div class="sec-label">Contact</div>
@@ -1330,20 +1257,16 @@ footer span b { color:var(--accent); }
     </div>
   </section>
 
-  <!-- FOOTER -->
+ 
   <footer>
     <span>© 2025 <b>Oluwole Feranmi Emmanuel</b></span>
     <span>Backend Developer in Training · TS Academy</span>
     <span style="color:var(--accent)">Open to Opportunities</span>
   </footer>
 
-</div><!-- /#main -->
-
-<!-- ============================================================
-     JAVASCRIPT
-============================================================ -->
+</div>
 <script>
-/* --- Cursor --- */
+
 const cursor = document.getElementById('cursor');
 const ring   = document.getElementById('cursor-ring');
 let mx=0,my=0,rx=0,ry=0;
@@ -1361,7 +1284,6 @@ document.addEventListener('mousemove', e=>{
   requestAnimationFrame(animRing);
 })();
 
-/* --- Active nav on scroll --- */
 const sections = document.querySelectorAll('section[id], #hero');
 const navLinks  = document.querySelectorAll('.nav-item a');
 
@@ -1377,7 +1299,6 @@ const observer = new IntersectionObserver(entries=>{
 
 sections.forEach(s=>observer.observe(s));
 
-/* --- Scroll reveal --- */
 const reveals = document.querySelectorAll('.reveal');
 const revealObs = new IntersectionObserver(entries=>{
   entries.forEach(e=>{
@@ -1386,7 +1307,6 @@ const revealObs = new IntersectionObserver(entries=>{
 },{threshold:0.1, rootMargin:'0px 0px -40px 0px'});
 reveals.forEach(el=>revealObs.observe(el));
 
-/* --- Terminal typewriter --- */
 const lines = document.querySelectorAll('.t-line');
 lines.forEach((line,i)=>{
   line.style.opacity='0';
